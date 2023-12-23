@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pomodoro Timer</title>
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="loader"></div>
+
+    <div class="container">
+      <h2>Pomodoro Timer</h2>
+      <h1 id="Timer">00:00</h1>
+      <input type="number" placeholder="Set Duration" id="TimerInput" /><br />
+      <button class="button type1" id="Set1" onclick="SetTimer()">
+        <span class="btn-txt">SET</span>
+      </button>
+      <button class="button type1" onclick="StartTimer()" id="Start">
+        <span class="btn-txt">START</span>
+      </button>
+      <button class="button type1" onclick="StopTimer()" id="Stop">
+        <span class="btn-txt">STOP</span>
+      </button>
+      <button class="button type1" onclick="ResetTimer()" id="Reset">
+        <span class="btn-txt">RESET</span>
+      </button>
+
+      <h2>Break</h2>
+
+      <input
+        type="number"
+        placeholder="Set Break Duration"
+        id="TimerBreakInput"
+        class="NewInput"
+      /><br />
+      <button class="button type1" id="Set2" onclick="SetBreakTimer()">
+        <span class="btn-txt">SET</span>
+      </button>
+      <h1 id="Timer2">00:00</h1>
+      <button class="button type1" onclick="ResetTimer1()" id="Reset1">
+        <span class="btn-txt">RESET</span>
+      </button>
+      <audio id="myAudio">
+        <source
+          src="Alarm Clock Sound Effect (Animated).mp3"
+          type="audio/mp3"
+        />
+      </audio>
+    </div>
+  </body>
+</html>
