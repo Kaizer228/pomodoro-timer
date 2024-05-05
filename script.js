@@ -155,3 +155,5 @@ function ResetTimer1() {
   // Clear local storage value when the break timer is reset
   localStorage.removeItem('BreakTime');
 }
+
+
